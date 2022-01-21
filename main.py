@@ -8,15 +8,15 @@ pygame.init()
 #screen
 screen= pygame.display.set_mode((800,600))
 
-bg= pygame.image.load('spacebg.png')
+bg= pygame.image.load('assets/spacebg.png')
 
 #Icon creation
 pygame.display.set_caption('Space Invaders')
-Logo= pygame.image.load('logo.png')
+Logo= pygame.image.load('assets/logo.png')
 pygame.display.set_icon(Logo)
 
 #Player
-playerImg = pygame.image.load("player.png")
+playerImg = pygame.image.load("assets/player.png")
 playerX= 360
 playerY= 500
 playerX_change = 0
@@ -25,7 +25,7 @@ def player(X,Y):
 
 
 #Alien
-alienImg = pygame.image.load("alien.png")
+alienImg = pygame.image.load("assets/alien.png")
 alienX= random.randint(0,800)
 alienY= random.randint(50,150)
 alienX_change = 0.3
