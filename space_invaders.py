@@ -17,7 +17,7 @@ def run_game():
     pygame.display.set_caption("Space Invaders")
 
     # Make a ship
-    ship = Ship(screen)
+    ship = Ship(ai_settings, screen)
 
     # While Loop to update screen action.
     while True:
@@ -25,7 +25,7 @@ def run_game():
         gf.check_events(ship)
 
         # Update the motion of the ship based on the keyboard input
-        ship.update
+        ship.update()
         
         # Filling the background with the color mentioned in the tuple bg_color
         gf.update_screen(ai_settings, screen, ship)
